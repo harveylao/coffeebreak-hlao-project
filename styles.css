@@ -474,7 +474,7 @@ a:active {
 
 /* Carousel images */
 .carousel-slide img {
-    width: 100%; /* Ensures the image takes full width of the container */
+    width: 30%; /* Ensures the image takes full width of the container */
     max-width: 50vw; /* Limit the image to 50% of viewport width */
     height: auto; /* Maintains the original aspect ratio */
     object-fit: contain; /* Ensures image is contained and maintains aspect ratio */
@@ -511,6 +511,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-inline: 4em;
 }
 
 /* Position the previous button on the left */
