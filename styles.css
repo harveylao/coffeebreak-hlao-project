@@ -1,0 +1,546 @@
+/* Basic Body Styling */
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 112px; /* Added space for fixed navbar */
+}
+
+html, body {
+    min-height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling, but allow vertical */
+}
+
+
+/* Heading Styles */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.body-large {
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+/* Button Styles */
+.button {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    gap: 10px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    margin-top: 190px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05), translateY(-12px);
+}
+
+.button:focus {
+    outline: 2px solid #fff;
+}
+
+a:link {
+  color: cyan;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: magenta;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* Background Video Wrapper */
+#background-video-wrapper {
+    position: fixed;
+    right: 0;
+    top: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+    overflow: hidden; /* Ensures that any overflowing video content is hidden */
+}
+
+/* Video Styling */
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Video overlay to darken the video */
+#video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75); /* 75% black overlay */
+    z-index: -1;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 100%);
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.logo h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    padding-inline: 50px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: background-color 0.3s
+}
+
+.logo-image {
+    width: 40px; /* Adjust width of logo image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: -40px; /* Add space between the logo image and text */
+    margin-left: 24px; /* Add space between the logo image and text */
+}
+
+/* Search Bar Styles */
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.search-bar {
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.search-bar::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    padding: 5px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s
+}
+
+/* Content Container */
+.content-container {
+    max-width: 1800px;
+    margin: 120px auto 50px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 30px;
+    max-width: 1200px;
+    position: center;
+}
+
+.section h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-family: 'Arvo', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Navbar Active Link */
+.nav-links a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Coffee 101 Page Background with Overlay */
+.coffee101-bg {
+    position: relative;
+    background: url('coffee\ beans\ background\ 85.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh; /* Ensure the background image covers the full viewport height */
+}
+
+/* Ensure content appears above overlay */
+.coffee101-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px; /* Adjust based on preference */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 20px;
+    text-align: left; /* Keeps text alignment normal */
+}
+
+/* Styling for images with text wrapping */
+.image-right, .image-left {
+    margin: 15px;
+}
+
+.image-right {
+    float: right;
+    margin-left: 20px; /* Adds space between the image and text */
+}
+
+.image-left {
+    float: left;
+    margin-right: 20px; /* Adds space between the image and text */
+}
+
+/* Ensure images are responsive and do not overflow */
+.coffee-image {
+    max-width: 25em;
+    height: auto;
+    border-radius: 8px; /* Optional: gives the image rounded corners */
+}
+
+/* Clearfix for the sections to prevent layout issues */
+.section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Ensure the hamburger menu is styled properly */
+.navbar .w3-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 8px 16px;
+}
+
+.w3-button i {
+    color: white !important; /* Ensures the icon is white */
+    font-size: 20px; /* Adjust size if needed */
+}
+
+/* Ensure sidebar menu appears correctly */
+.w3-sidebar {
+    width: 250px; /* Set sidebar width */
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 1000;
+}
+
+.w3-show {
+    display: block !important;
+}
+
+.w3-bar-item.w3-button i {
+    color: white !important;
+    font-size: 24px;
+}
+
+/* Search Icon Styles */
+.search-icon {
+    font-size: 24px;
+    color: white;
+    margin-right: 24px; /* Adds space between the search icon and cart */
+    cursor: pointer;
+}
+
+/* Cart Icon Styles */
+.cart-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    font-family: 'Arvo', serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #3a270d;
+    color: #fff;
+    padding: 40px 40px;
+    margin-top: 2em;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #f4a261;
+}
+
+.footer-bottom {
+    font-family: 'Arvo', serif;
+    font-size: 14px;
+    color: #ddd;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 22px;
+    margin: 0 12px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f4a261;
+    transition: background-color 0.3s
+}
+
+
+/* Carousel container */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Ensures full width on all screen sizes */
+    overflow: hidden; /* Hide any overflow content when sliding */
+}
+
+/* Carousel wrapper */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+}
+
+/* Carousel slide */
+.carousel-slide {
+    min-width: 100%; /* Ensures each item takes full width of container */
+    box-sizing: border-box; /* Prevents padding from affecting width */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+}
+
+/* Carousel images */
+.carousel-slide img {
+    width: 100%; /* Ensures the image takes full width of the container */
+    max-width: 50vw; /* Limit the image to 50% of viewport width */
+    height: auto; /* Maintains the original aspect ratio */
+    object-fit: contain; /* Ensures image is contained and maintains aspect ratio */
+    margin: 0 auto; /* Centers the image within the slide */
+}
+
+/* Carousel slide captions */
+.carousel-slide p {
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    width: 100%;
+    max-width: 50vw; /* Same max width as image */
+    margin: 0 auto; /* Centers the caption below the image */
+    text-align: center;
+}
+
+/* Carousel buttons */
+button {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border-radius: 50%; /* This ensures the button is circular */
+    width: 50px; /* Set width */
+    height: 50px; /* Set height the same as width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Position the previous button on the left */
+.prev {
+    left: 10px;
+}
+
+/* Position the next button on the right */
+.next {
+    right: 10px;
+}
+
+/* Hover effect for the buttons */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken background on hover */
+}
+
+.no-bullets {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Add hover effect for table headers */
+#coffeeTable th {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Highlight table headers when hovered */
+#coffeeTable th:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

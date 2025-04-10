@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Break</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Arvo:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- W3.CSS Framework -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body class="coffee101-bg">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="javascript:void(0)" 
+               class="w3-bar-item w3-button w3-hide-large w3-hide-medium menu-icon" 
+               onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <!-- Logo -->
+            <div class="logo">
+                <img src="coffee cup logo.png" alt="CoffeeBreak Logo" class="logo-image">
+                <h1><a href="index.html" class="w3-bar-item w3-button" style="font-size: 38px;">CoffeeBreak</a></h1>
+            </div>
+
+            <!-- Navigation Links -->
+            <div id="navLinks" class="w3-hide-small w3-bar">
+                <ul class="nav-links">
+                    <li><a href="coffee101.html" class="w3-bar-item w3-button" style="font-size: 20px;">Coffee 101</a></li>
+                    <li><a href="populardrinks.html" class="w3-bar-item w3-button" style="font-size: 20px;">Popular Drinks</a></li>
+                    <li><a href="comparedrinks.html" class="w3-bar-item w3-button" style="font-size: 20px;">Compare Drinks</a></li>
+                    <li><a href="makeyourown.html" class="w3-bar-item w3-button" style="font-size: 20px;">Make Your Own</a></li>
+                    <li><a href="cupofknowledge.html" class="w3-bar-item w3-button" style="font-size: 20px;">Cup of Knowledge</a></li>
+                </ul>
+            </div>
+
+            <!-- Search Icon -->
+            <div class="search-icon">
+                <i class="fa fa-search"></i> <!-- FontAwesome Search Icon -->
+            </div>
+
+            <!-- Cart Icon -->
+            <div class="cart-icon">
+                🛒
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div>
+        <h1>Most Popular Coffee Drinks</h1>
+    </div>
+
+    <!-- Image Carousel -->
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="latte.jpg" alt="Latte">
+                <div class="carousel-caption">
+                    <h2>1. Latte</h2>
+                    <ul class="no-bullets">
+                        <li><strong>Ingredients:</strong> Espresso, steamed milk, light foam</li>
+                        <li><strong>Taste:</strong> Smooth and creamy</li>
+                        <li><strong>Perfect for:</strong> Those who enjoy a milkier, less intense coffee experience</li>
+                        <li><strong>Fun Fact:</strong> The name latte comes from the Italian word for "milk"!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="cappuccino.jpg" alt="Cappuccino">
+                <div class="carousel-caption">
+                    <h2>2. Cappuccino</h2>
+                    <ul class="no-bullets">
+                        <li><strong>Ingredients:</strong> Espresso, equal parts steamed milk and foam</li>
+                        <li><strong>Taste:</strong> Rich, bold, and frothy</li>
+                        <li><strong>Perfect for:</strong> Coffee lovers who enjoy a balance between espresso strength and creamy texture</li>
+                        <li><strong>Fun Fact:</strong> Traditionally, cappuccinos are served in smaller cups to maintain the ideal ratio of ingredients.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="macchiato.jpg" alt="Macchiato">
+                <div class="carousel-caption">
+                    <h2>3. Macchiato</h2>
+                    <ul class="no-bullets">
+                        <li><strong>Ingredients:</strong> Espresso with a small amount of foamed milk</li>
+                        <li><strong>Taste:</strong> Strong and bold with a hint of creaminess</li>
+                        <li><strong>Perfect for:</strong> Those who want a more intense coffee flavor with just a touch of milk</li>
+                        <li><strong>Fun Fact:</strong> Macchiato means "stained" or "marked" in Italian, referring to how the espresso is "stained" with milk.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+    
+        function moveSlide(direction) {
+            currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+    
+        function updateCarousel() {
+            const offset = -currentIndex * 100;
+            document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+        }
+    </script>
+    
+    <div style="
+        background-color: #EDD9C0;
+        border-radius: 24px;
+        max-height: 500px;
+        overflow-y: auto;
+        padding: 24px;
+        font-family: sans-serif;
+        line-height: 1.2;
+        color: #232323;
+        margin: 3em;
+        text-align: left;"
+        >
+        <h2 style="margin-top: 0; color: #232323;">How to Choose the Right Coffee for You</h2>
+        <p>
+            Each of these drinks offers a unique coffee experience, depending on how much milk and foam you prefer.
+            Understanding their key differences will help you make the right choice for your next coffee order.
+        </p>
+
+        <h3>Latte: The Creamy Classic</h3>
+        <p>
+            A latte is one of the most popular espresso-based drinks, known for its smooth and mellow flavor.
+            The high ratio of steamed milk balances the intensity of espresso, making it an excellent choice
+            for those who enjoy a creamy texture and mild coffee taste.
+        </p>
+
+        <strong>Common Variations:</strong>
+        <ul>
+            <li>☕ Iced Latte – Chilled espresso with cold milk and ice</li>
+            <li>☕ Flavored Latte – Infused with syrups like vanilla, caramel, or hazelnut</li>
+            <li>☕ Oat Milk Latte – A dairy-free alternative with a naturally sweet flavor</li>
+        </ul>
+
+        <strong>Best For:</strong>
+        <ul>
+            <li>Those who enjoy a milkier, less intense coffee experience</li>
+            <li>People looking for a great base for flavored syrups</li>
+        </ul>
+
+        <h3>Cappuccino: The Frothy Favorite</h3>
+        <p>
+            A cappuccino has a more balanced ratio of espresso, steamed milk, and foam, creating a rich, bold taste
+            with a light, airy texture. It’s stronger than a latte due to the reduced milk content but still retains
+            a creamy consistency.
+        </p>
+
+        <strong>Traditional Ratios:</strong>
+        <ul>
+            <li>⅓ Espresso – Strong coffee base</li>
+            <li>⅓ Steamed Milk – Adds smoothness</li>
+            <li>⅓ Foam – Creates a thick, velvety texture</li>
+        </ul>
+
+        <strong>Best For:</strong>
+        <ul>
+            <li>Coffee lovers who enjoy a stronger espresso presence</li>
+            <li>Those who like a frothy texture</li>
+            <li>People who appreciate the art of coffee making—cappuccinos are a barista’s playground for latte art!</li>
+        </ul>
+
+        <p>💡 <strong>Pro Tip:</strong> If you prefer a drier, more intense cappuccino, ask for a “dry cappuccino” with extra foam and less milk.</p>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer Logo and About -->
+            <div class="footer-section about">
+                <img src="coffee cup logo.png" alt="CoffeeBreak Logo" style="width: 80px;">
+                <h2>CoffeeBreak</h2>
+                <p>Your go-to guide for all things coffee. From espresso basics to crafting your own brews, we've got you covered.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coffee101.html">Coffee 101</a></li>
+                    <li><a href="populardrinks.html">Popular Drinks</a></li>
+                    <li><a href="comparedrinks.html">Compare Drinks</a></li>
+                    <li><a href="makeyourown.html">Make Your Own</a></li>
+                    <li><a href="cupofknowledge.html">Cup of Knowledge</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 CoffeeBreak. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        function moveSlide(n) {
+            const slides = document.querySelectorAll(".carousel-slide");
+            slideIndex = (slideIndex + n + slides.length) % slides.length;
+            slides.forEach((slide, i) => {
+                slide.style.display = i === slideIndex ? "block" : "none";
+            });
+        }
+        document.addEventListener("DOMContentLoaded", () => moveSlide(0));
+    </script>
+</body>
+</html>

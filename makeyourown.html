@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee Break</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Arvo:wght@400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- W3.CSS Framework -->
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script> <!-- FontAwesome Icons -->
+    </head>
+<body class="coffee101-bg">
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="javascript:void(0)" 
+               class="w3-bar-item w3-button w3-hide-large w3-hide-medium menu-icon" 
+               onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+    
+            <!-- Logo -->
+            <div class="logo">
+                <img src="coffee cup logo.png" alt="CoffeeBreak Logo" class="logo-image">
+                <h1><a href="index.html" class="w3-bar-item w3-button" style="font-size: 38px;">CoffeeBreak</a></h1>
+            </div>
+
+
+    
+            <!-- Navigation Links -->
+            <div id="navLinks" class="w3-hide-small w3-bar">
+                <ul class="nav-links">
+                    <li><a href="coffee101.html" class="w3-bar-item w3-button" style="font-size: 20px;">Coffee 101</a></li>
+                    <li><a href="populardrinks.html" class="w3-bar-item w3-button" style="font-size: 20px;">Popular Drinks</a></li>
+                    <li><a href="comparedrinks.html" class="w3-bar-item w3-button" style="font-size: 20px;">Compare Drinks</a></li>
+                    <li><a href="makeyourown.html" class="w3-bar-item w3-button" style="font-size: 20px;">Make Your Own</a></li>
+                    <li><a href="cupofknowledge.html" class="w3-bar-item w3-button" style="font-size: 20px;">Cup of Knowledge</a></li>
+                </ul>
+            </div>
+
+    
+            <!-- Search Icon -->
+            <div class="search-icon">
+                <i class="fa fa-search"></i> <!-- FontAwesome Search Icon -->
+            </div>
+    
+            <!-- Cart Icon -->
+            <div class="cart-icon">
+                🛒
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Sidebar Navigation (Hidden by Default) -->
+    <div class="w3-sidebar w3-bar-block w3-black w3-hide w3-animate-left" id="mobileMenu">
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-large" onclick="w3_close()">✖</a>
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="coffee101.html" class="w3-bar-item w3-button">Coffee 101</a>
+        <a href="populardrinks.html" class="w3-bar-item w3-button">Popular Drinks</a>
+        <a href="comparedrinks.html" class="w3-bar-item w3-button">Compare Drinks</a>
+        <a href="makeyourown.html" class="w3-bar-item w3-button">Make Your Own</a>
+        <a href="cupofknowledge.html" class="w3-bar-item w3-button">Cup of Knowledge</a>
+    </div>
+
+    <!-- Main Content -->
+    <div>
+        <h1>Make Your Own</h1>
+    </div>
+
+    <!-- JavaScript for Sidebar Menu -->
+    <script>
+        function w3_open() {
+        document.getElementById("mobileMenu").classList.add("w3-show");
+        document.getElementById("mobileMenu").classList.remove("w3-hide");
+        }
+
+        function w3_close() {
+        document.getElementById("mobileMenu").classList.remove("w3-show");
+        document.getElementById("mobileMenu").classList.add("w3-hide");
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer Logo and About -->
+            <div class="footer-section about">
+                <img src="coffee cup logo.png" alt="CoffeeBreak Logo" style="width: 80px;">
+                <h2>CoffeeBreak</h2>
+                <p>Your go-to guide for all things coffee. From espresso basics to crafting your own brews, we've got you covered.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coffee101.html">Coffee 101</a></li>
+                    <li><a href="populardrinks.html">Popular Drinks</a></li>
+                    <li><a href="comparedrinks.html">Compare Drinks</a></li>
+                    <li><a href="makeyourown.html">Make Your Own</a></li>
+                    <li><a href="cupofknowledge.html">Cup of Knowledge</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 CoffeeBreak. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
