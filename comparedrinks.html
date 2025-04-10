@@ -78,113 +78,119 @@
         }
     </script>
 
-    <table id="coffeeTable" style="
-    border-collapse: collapse;
-    background-color: #EDD9C0;
-    border-radius: 12px;
-    overflow: hidden;
-    font-family: sans-serif;
-    color: #232323;
-    text-align: left;
-    margin: auto;
-    ">
-    <thead>
-    <tr style="background-color: #e1c9a6;">
-        <th style="padding: 8px 12px; white-space: nowrap;">☕ Drink Name</th>
-        <th style="padding: 8px 12px; white-space: nowrap;">🔥 Espresso Strength</th>
-        <th style="padding: 8px 12px; white-space: nowrap;">🥛 Milk Content</th>
-        <th style="padding: 8px 12px; white-space: nowrap;">🌀 Texture</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td style="padding: 8px 12px;">Espresso</td>
-        <td style="padding: 8px 12px;">🔥🔥🔥 High</td>
-        <td style="padding: 8px 12px;">❌ None</td>
-        <td style="padding: 8px 12px;">🌊 Thick & Bold</td>
-    </tr>
-    <tr>
-        <td style="padding: 8px 12px;">Macchiato</td>
-        <td style="padding: 8px 12px;">🔥🔥 High</td>
-        <td style="padding: 8px 12px;">🥛 Low</td>
-        <td style="padding: 8px 12px;">🌥️ Lightly Creamy</td>
-    </tr>
-    <tr>
-        <td style="padding: 8px 12px;">Cappuccino</td>
-        <td style="padding: 8px 12px;">🔥🔥 Medium-High</td>
-        <td style="padding: 8px 12px;">🥛 Medium</td>
-        <td style="padding: 8px 12px;">☁️ Frothy & Airy</td>
-    </tr>
-    <tr>
-        <td style="padding: 8px 12px;">Latte</td>
-        <td style="padding: 8px 12px;">🔥 Medium</td>
-        <td style="padding: 8px 12px;">🥛🥛 High</td>
-        <td style="padding: 8px 12px;">🌊 Smooth & Creamy</td>
-    </tr>
-    <tr>
-        <td style="padding: 8px 12px;">Flat White</td>
-        <td style="padding: 8px 12px;">🔥🔥 Medium-High</td>
-        <td style="padding: 8px 12px;">🥛🥛 High</td>
-        <td style="padding: 8px 12px;">🌊 Velvety Smooth</td>
-    </tr>
-    <tr><td colspan="4" style="height: 1px; background-color: #d3bfa3;"></td></tr>
-    <tr>
-        <td style="padding: 8px 12px;">Mocha</td>
-        <td style="padding: 8px 12px;">🔥 Medium</td>
-        <td style="padding: 8px 12px;">🥛🥛 High + ♦ Chocolate</td>
-        <td style="padding: 8px 12px;">♦ Rich & Sweet</td>
-    </tr>
-    <tr>
-        <td style="padding: 8px 12px;">Americano</td>
-        <td style="padding: 8px 12px;">🔥🔥 High</td>
-        <td style="padding: 8px 12px;">❌ None (Hot Water Added)</td>
-        <td style="padding: 8px 12px;">🌊 Thin & Smooth</td>
-    </tr>
-    <tr>
-        <td style="padding: 8px 12px;">Cortado</td>
-        <td style="padding: 8px 12px;">🔥🔥 Medium-High</td>
-        <td style="padding: 8px 12px;">= Equal to Espresso</td>
-        <td style="padding: 8px 12px;">🌊 Silky & Balanced</td>
-    </tr>
-    </tbody>
-    </table>
+    <div class="table-container">
+        <table id="coffeeTable" style="
+        border-collapse: collapse;
+        background-color: #EDD9C0;
+        border-radius: 12px;
+        overflow: hidden;
+        font-family: sans-serif;
+        color: #232323;
+        text-align: left;
+        margin: auto;
+        ">
+        <thead>
+        <tr style="background-color: #e1c9a6;">
+            <th class="sortable" style="padding: 8px 12px; white-space: nowrap;">☕ Drink Name</th>
+            <th class="sortable" style="padding: 8px 12px; white-space: nowrap;">🔥 Espresso Strength</th>
+            <th class="sortable" style="padding: 8px 12px; white-space: nowrap;">🥛 Milk Content</th>
+            <th class="sortable" style="padding: 8px 12px; white-space: nowrap;">🌀 Texture</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td style="padding: 8px 12px;">Espresso</td>
+            <td style="padding: 8px 12px;">🔥🔥🔥 High</td>
+            <td style="padding: 8px 12px;">❌ None</td>
+            <td style="padding: 8px 12px;">🌊 Thick & Bold</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px 12px;">Macchiato</td>
+            <td style="padding: 8px 12px;">🔥🔥 High</td>
+            <td style="padding: 8px 12px;">🥛 Low</td>
+            <td style="padding: 8px 12px;">🌥️ Lightly Creamy</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px 12px;">Cappuccino</td>
+            <td style="padding: 8px 12px;">🔥🔥 Medium-High</td>
+            <td style="padding: 8px 12px;">🥛 Medium</td>
+            <td style="padding: 8px 12px;">☁️ Frothy & Airy</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px 12px;">Latte</td>
+            <td style="padding: 8px 12px;">🔥 Medium</td>
+            <td style="padding: 8px 12px;">🥛🥛 High</td>
+            <td style="padding: 8px 12px;">🌊 Smooth & Creamy</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px 12px;">Flat White</td>
+            <td style="padding: 8px 12px;">🔥🔥 Medium-High</td>
+            <td style="padding: 8px 12px;">🥛🥛 High</td>
+            <td style="padding: 8px 12px;">🌊 Velvety Smooth</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px 12px;">Mocha</td>
+            <td style="padding: 8px 12px;">🔥 Medium</td>
+            <td style="padding: 8px 12px;">🥛🥛 High + ♦ Chocolate</td>
+            <td style="padding: 8px 12px;">♦ Rich & Sweet</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px 12px;">Americano</td>
+            <td style="padding: 8px 12px;">🔥🔥 High</td>
+            <td style="padding: 8px 12px;">❌ None (Hot Water Added)</td>
+            <td style="padding: 8px 12px;">🌊 Thin & Smooth</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px 12px;">Cortado</td>
+            <td style="padding: 8px 12px;">🔥🔥 Medium-High</td>
+            <td style="padding: 8px 12px;">= Equal to Espresso</td>
+            <td style="padding: 8px 12px;">🌊 Silky & Balanced</td>
+        </tr>
+        <tr><td colspan="4" style="height: .5px; background-color: #d3bfa3;"></td></tr>
+        </tbody>
+        </table>
+    </div>
 
     <script>
-        // Function to sort the table based on column index
-        function sortTable(n) {
-            const table = document.getElementById("coffeeTable");
-            let rows = table.rows;
-            let switching = true;
-            let dir = "asc"; // Set the sorting direction to ascending
-            while (switching) {
-                switching = false;
-                let shouldSwitch = false;
-                for (let i = 1; i < rows.length - 1; i++) {
-                    let x = rows[i].getElementsByTagName("TD")[n];
-                    let y = rows[i + 1].getElementsByTagName("TD")[n];
-                    if (dir === "asc" && x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() || dir === "desc" && x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-                        shouldSwitch = true;
-                        break;
-                    }
-                }
-                if (shouldSwitch) {
-                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-                    switching = true;
-                } else {
-                    if (dir === "asc") {
-                        dir = "desc";
-                        switching = true;
-                    }
-                }
-            }
-        }
+        document.querySelectorAll("#coffeeTable th.sortable").forEach((header, columnIndex) => {
+        header.addEventListener("click", () => {
+        const table = document.getElementById("coffeeTable");
+        const tbody = table.querySelector("tbody");
 
-        // Add event listeners to table headers to sort on click
-        const headers = document.querySelectorAll("#coffeeTable th");
-        headers.forEach((header, index) => {
-            header.addEventListener("click", () => sortTable(index));
+        // Collect all rows
+        const allRows = Array.from(tbody.querySelectorAll("tr"));
+        const dataRows = allRows.filter(row => row.querySelectorAll("td").length > 1);
+
+        const isAscending = header.classList.contains("asc");
+
+        // Clear sort classes
+        document.querySelectorAll("#coffeeTable th").forEach(th => {
+            th.classList.remove("asc", "desc");
         });
+        header.classList.add(isAscending ? "desc" : "asc");
+
+        const sortedRows = dataRows.sort((a, b) => {
+            const cellA = a.cells[columnIndex].textContent.trim().toLowerCase();
+            const cellB = b.cells[columnIndex].textContent.trim().toLowerCase();
+            return isAscending
+                ? cellB.localeCompare(cellA)
+                : cellA.localeCompare(cellB);
+        });
+
+        // Remove all rows (including divider)
+        allRows.forEach(row => tbody.removeChild(row));
+
+        // Add back sorted data rows
+        sortedRows.forEach(row => tbody.appendChild(row));
+
+        // Re-add divider row (optional)
+        const divider = document.createElement("tr");
+        divider.innerHTML = `<td colspan="4" style="height: 1px; background-color: #d3bfa3;"></td>`;
+        tbody.appendChild(divider);
+        });
+    });
     </script>
+    
 
     <!-- Footer -->
     <footer class="footer">

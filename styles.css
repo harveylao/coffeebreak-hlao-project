@@ -113,6 +113,7 @@ a:active {
     left: 50%;
     width: auto;
     height: 100vh;
+    width: 100%;
     object-fit: cover;
     transform: translate(-50%, -50%);
     z-index: -1;
@@ -329,12 +330,12 @@ a:active {
     border: none;
     cursor: pointer;
     color: white;
-    padding: 8px 16px;
 }
 
 .w3-button i {
     color: white !important; /* Ensures the icon is white */
     font-size: 20px; /* Adjust size if needed */
+    padding: 12px 12px;
 }
 
 /* Ensure sidebar menu appears correctly */
@@ -465,6 +466,7 @@ a:active {
 /* Carousel slide */
 .carousel-slide {
     min-width: 100%; /* Ensures each item takes full width of container */
+    max-width: 50vw;
     box-sizing: border-box; /* Prevents padding from affecting width */
     text-align: center;
     display: flex;
@@ -544,4 +546,92 @@ button {
 /* Highlight table headers when hovered */
 #coffeeTable th:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+th.sortable {
+    cursor: pointer;
+    position: relative;
+}
+
+th.sortable::after {
+    content: "⇅";
+    font-size: 12px;
+    padding-left: 8px;
+    opacity: 0.4;
+}
+
+th.sortable.asc::after {
+    content: "↑";
+    opacity: 1;
+}
+
+th.sortable.desc::after {
+    content: "↓";
+    opacity: 1;
+}
+
+.table-container {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  
+  table {
+    min-width: 600px; /* Optional: ensures table is wide enough to scroll */
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    white-space: nowrap; /* Keeps content from wrapping weirdly */
+    padding: 10px;
+}
+
+tr {
+    border: none;
+}
+
+/* Accordion */
+.accordion-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* Accordion button */
+.accordion-btn {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    padding: 0px;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 0;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.accordion-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Accordion content (video container) */
+.accordion-content {
+    max-height: 0; /* Initially closed */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    margin-bottom: 60px;
+    margin-top: -20px;
+}
+
+
+/* Show accordion content */
+.accordion-content.show {
+    height: 315px; /* Adjust to the content height */
 }

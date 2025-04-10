@@ -68,16 +68,56 @@
         <h1>Make Your Own</h1>
     </div>
 
-    <!-- JavaScript for Sidebar Menu -->
-    <script>
-        function w3_open() {
-        document.getElementById("mobileMenu").classList.add("w3-show");
-        document.getElementById("mobileMenu").classList.remove("w3-hide");
-        }
+    <!-- Accordion -->
+    
+    <div class="accordion-section" style="margin: 40px auto; max-width: 900px;">
+        <div>
+            <button onclick="toggleAccordion('latte')" class="accordion-btn">How to Make a Latte</button>
+        </div>
 
-        function w3_close() {
-        document.getElementById("mobileMenu").classList.remove("w3-show");
-        document.getElementById("mobileMenu").classList.add("w3-hide");
+        <div id="latte" class="accordion-content">
+            <iframe width="100%" height="500vh" src="https://www.youtube.com/embed/pmXTG96Anc4" 
+                title="How to Make a Latte" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div>
+            <button onclick="toggleAccordion('cappuccino')" class="accordion-btn">How to Make a Cappuccino</button>
+        </div>
+        <div id="cappuccino" class="accordion-content">
+            <iframe width="100%" height="500vh" src="https://www.youtube.com/embed/DX8R-ea5kpw" 
+                title="How to Make a Cappuccino" frameborder="0" allowfullscreen></iframe>
+        </div>
+    
+        <div>
+            <button onclick="toggleAccordion('macchiato')" class="accordion-btn">How to Make a Macchiato</button>
+        </div>
+        <div id="macchiato" class="accordion-content">
+            <iframe width="100%" height="500vh" src="https://www.youtube.com/embed/RmyoF3ag0o4" 
+                title="How to Make a Macchiato" frameborder="0" allowfullscreen></iframe>
+        </div>
+    
+        <div>
+            <button onclick="toggleAccordion('flatWhite')" class="accordion-btn">How to Make a Flat White</button>
+        </div>
+        <div id="flatWhite" class="accordion-content">
+            <iframe width="100%" height="500vh" src="https://www.youtube.com/embed/su4l6UNpMIo" 
+                title="How to Make a Flat White" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript for Accordion -->
+    <script>
+        function toggleAccordion(id) {
+            var content = document.getElementById(id);
+            if (content.style.maxHeight) {
+                // If content is open, close it
+                content.style.maxHeight = null;
+            } else {
+                // If content is closed, open it
+                content.style.maxHeight = content.scrollHeight + "px"; // Set max-height to the content height
+            }
         }
     </script>
 
