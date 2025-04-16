@@ -66,7 +66,177 @@
     <!-- Main Content -->
     <div>
         <h1>Cup of Knowledge</h1>
+        <br>
+        <h4>Click a drink to learn more!</h4>
     </div>
+
+    <!-- lightbox -->
+    <div id="coffee" class="w3-container w3-padding-top-64">
+        <!-- ROW 1 -->
+        <div class="w3-row-padding" style="margin: 15px 0px">
+            <!-- Cappuccino -->
+            <div class="w3-col s4">
+            <img src="Cappucino Cup.png" class="thumbnail w3-hover-shadow"
+                onclick="document.getElementById('modal01').style.display='block'" />
+            </div>
+        
+            <!-- Red Eye -->
+            <div class="w3-col s4">
+            <img src="Red Eye.png" class="thumbnail w3-hover-shadow"
+                onclick="document.getElementById('modal02').style.display='block'" />
+            </div>
+        
+            <!-- Macchiato -->
+            <div class="w3-col s4">
+            <img src="Machiatto.png" class="thumbnail w3-hover-shadow"
+                onclick="document.getElementById('modal03').style.display='block'" />
+            </div>
+        </div>
+        
+        <!-- ROW 2 -->
+        <div class="w3-row-padding" style="margin: 15px 0px">
+            <!-- Mocha -->
+            <div class="w3-col s4">
+            <img src="Mocha.png" class="thumbnail w3-hover-shadow"
+                onclick="document.getElementById('modal04').style.display='block'" />
+            </div>
+        
+            <!-- Flat White -->
+            <div class="w3-col s4">
+            <img src="Flat White.png" class="thumbnail w3-hover-shadow"
+                onclick="document.getElementById('modal05').style.display='block'" />
+            </div>
+        
+            <!-- Affogato -->
+            <div class="w3-col s4">
+            <img src="Affogato.png" class="thumbnail w3-hover-shadow"
+                onclick="document.getElementById('modal06').style.display='block'" />
+            </div>
+        </div>
+        
+        <!-- ROW 3 -->
+        <div class="w3-row-padding" style="margin: 15px 0px">
+            <!-- Café au Lait -->
+            <div class="w3-col s4">
+            <img src="Cafe Au Lait.png" class="thumbnail w3-hover-shadow"
+                onclick="document.getElementById('modal07').style.display='block'" />
+            </div>
+        
+            <!-- Irish -->
+            <div class="w3-col s4">
+            <img src="Irish.png" class="thumbnail w3-hover-shadow"
+                onclick="document.getElementById('modal08').style.display='block'" />
+            </div>
+        
+            <!-- Espresso -->
+            <div class="w3-col s4">
+            <img src="Espresso.png" class="thumbnail w3-hover-shadow"
+                onclick="document.getElementById('modal09').style.display='block'" />
+            </div>
+        </div>
+  
+    
+        <!-- MODALS -->
+        <!-- Cappuccino -->
+        <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" style="cursor: pointer">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="Cappucino Cup L.png" style="width:90%" />
+            <p class="body-large" style="background-color: rgba(0, 0, 0, 0.85); border-radius: 24px; margin: 24px; padding: 16px;">
+                A cappuccino is basically a latte that hit the gym. Equal parts espresso, steamed milk, and velvety microfoam, it’s light, fluffy, and a favorite of mustache-wearers everywhere (foam-stache guaranteed). Pro tip: The traditional Italian way is to drink it before 11 AM—otherwise, expect some serious side-eye from the locals.
+              </p>              
+        </div>
+        </div>
+    
+        <!-- Red Eye -->
+        <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" style="cursor: pointer">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="Red Eye L.png" style="width:100%" />
+            <p class="body-large" style="background-color: rgba(0, 0, 0, 0.85); border-radius: 24px; margin: 24px; padding: 16px;">
+                Feeling like a zombie? The Red Eye is here to revive you. This beast is just a regular cup of coffee with a shot of espresso tossed in for good measure (because apparently, coffee alone wasn’t enough). Need even more power? There’s a Black Eye (two shots) and a Dead Eye (three shots). Choose wisely—your heart rate depends on it.
+              </p>  
+        </div>
+        </div>
+    
+        <!-- Macchiato -->
+        <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" style="cursor: pointer">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="Machiatto L.png" style="width:100%" />
+            <p class="body-large" style="background-color: rgba(0, 0, 0, 0.85); border-radius: 24px; margin: 24px; padding: 16px;">
+                “Macchiato” means “stained” in Italian, and that’s exactly what it is—an espresso “stained” with a tiny bit of frothy milk. Not to be confused with the sugar-loaded versions from certain coffee chains, the real macchiato is strong, bold, and perfect for those who want their espresso with just a whisper of creaminess.
+              </p> 
+        </div>
+        </div>
+    
+        <!-- Mocha -->
+        <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" style="cursor: pointer">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="Mocha L.png" style="width:100%" />
+            <p class="body-large" style="background-color: rgba(0, 0, 0, 0.85); border-radius: 24px; margin: 24px; padding: 16px;">
+                Can’t decide between coffee and hot chocolate? Mocha says, “Why not both?” This espresso-based drink gets a sweet upgrade with chocolate syrup or cocoa powder, then topped with steamed milk and sometimes whipped cream (because why not?). It’s like a hug in a cup, perfect for when you want caffeine but also have a dessert craving.
+              </p> 
+        </div>
+        </div>
+    
+        <!-- Flat White -->
+        <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" style="cursor: pointer">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="Flat White L.png" style="width:100%" />
+            <p class="body-large" style="background-color: rgba(0, 0, 0, 0.85); border-radius: 24px; margin: 24px; padding: 16px;">
+                A Flat White is basically a latte’s cooler, smoother cousin from Australia or New Zealand (they still argue over who invented it). It’s espresso with velvety microfoam, but with a stronger coffee flavor and a creamier texture. Think of it as the minimalist’s dream—simple, balanced, and no unnecessary fluff.
+              </p> 
+        </div>
+        </div>
+    
+        <!-- Affogato -->
+        <div id="modal06" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" style="cursor: pointer">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="Affogato L.png" style="width:100%" />
+            <p class="body-large" style="background-color: rgba(0, 0, 0, 0.85); border-radius: 24px; margin: 24px; padding: 16px;">
+                Dessert or coffee? Affogato refuses to pick sides. This Italian classic is a scoop of vanilla gelato (or ice cream) drowned in a shot of hot espresso. The result? A melty, bittersweet masterpiece that’s both sophisticated and ridiculously simple. Perfect for when you need caffeine but also want a treat.
+              </p> 
+        </div>
+        </div>
+    
+        <!-- Café au Lait -->
+        <div id="modal07" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" style="cursor: pointer">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="Cafe Au Lait L.png" style="width:100%" />
+            <p class="body-large" style="background-color: rgba(0, 0, 0, 0.85); border-radius: 24px; margin: 24px; padding: 16px;">
+                The French take on coffee-with-milk. It’s just brewed coffee with an equal amount of warm milk—no frothy nonsense, just smooth, creamy goodness. It’s the ideal drink for dipping a croissant (or, let’s be real, any pastry you have on hand). Bonus points if you sip it while wearing a beret.
+              </p> 
+        </div>
+        </div>
+    
+        <!-- Irish -->
+        <div id="modal08" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" style="cursor: pointer">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="Irish L.png" style="width:100%" />
+            <p class="body-large" style="background-color: rgba(0, 0, 0, 0.85); border-radius: 24px; margin: 24px; padding: 16px;">
+                Coffee with a kick—literally. Irish Coffee combines hot coffee, Irish whiskey, sugar, and a float of whipped cream. It’s warm, smooth, and dangerously drinkable. Originally created to keep weary travelers cozy, it’s now a staple for those who like their coffee with a little… extra encouragement. Sláinte!
+              </p> 
+        </div>
+        </div>
+    
+        <!-- Espresso -->
+        <div id="modal09" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" style="cursor: pointer">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="Espresso L.png" style="width:100%" />
+            <p class="body-large" style="background-color: rgba(0, 0, 0, 0.85); border-radius: 24px; margin: 24px; padding: 16px;">
+                The foundation of almost every coffee drink, espresso is a tiny but mighty shot of concentrated coffee. Rich, bold, and packing a punch, it’s the go-to for purists and people who need a caffeine hit right now. Drink it straight, sip it slowly, or use it as the base for countless other drinks—it’s the Swiss Army knife of coffee.
+              </p> 
+        </div>
+        </div>
+    </div>
+  
 
     <!-- JavaScript for Sidebar Menu -->
     <script>

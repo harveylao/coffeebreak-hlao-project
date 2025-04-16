@@ -64,7 +64,7 @@ h2 {
 
 .button:hover {
     background: rgba(255, 255, 255, 0.4);
-    transform: scale(1.05), translateY(-12px);
+    transform: scale(1.05) translateY(-12px);
 }
 
 .button:focus {
@@ -635,3 +635,70 @@ tr {
 .accordion-content.show {
     height: 315px; /* Adjust to the content height */
 }
+
+
+/* Lightbox */
+
+.thumbnail {
+    width: 100%;
+    object-fit: cover;
+    cursor: zoom-in;
+  }
+
+  .w3-col {
+    padding-bottom: 40px; /* reduce space below each image */
+  }
+
+  .w3-row-padding {
+    margin: 18px 0px !important; /* tighten vertical spacing between rows */
+  }
+
+  #coffee {
+    max-width: 960px; /* optional: constrain layout width */
+    margin: auto;
+  }
+
+  .w3-modal-content {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  .w3-modal-content {
+    flex-direction: row;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  .modal-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 16px;
+    max-width: 90%;
+    margin: auto;
+    flex-wrap: wrap; /* makes it responsive */
+  }
+
+  .modal-img {
+    width: 300px;
+    max-width: 90vw;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .modal-text {
+    color: white;
+    max-width: 400px;
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .modal-text h4 {
+    margin-top: 0;
+    font-size: 3rem;
+  }
+
