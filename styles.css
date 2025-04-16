@@ -6,12 +6,12 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    padding-top: 112px; /* Added space for fixed navbar */
+    padding-top: 112px;
 }
 
 html, body {
     min-height: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling, but allow vertical */
+    overflow-x: hidden;
 }
 
 
@@ -103,7 +103,7 @@ a:active {
     min-width: 100%; 
     min-height: 100%;
     z-index: -1;
-    overflow: hidden; /* Ensures that any overflowing video content is hidden */
+    overflow: hidden;
 }
 
 /* Video Styling */
@@ -126,7 +126,7 @@ a:active {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.75); /* 75% black overlay */
+    background: rgba(0, 0, 0, 0.75);
     z-index: -1;
 }
 
@@ -166,7 +166,7 @@ a:active {
 
 .logo {
     display: flex;
-    align-items: center; /* Align items vertically */
+    align-items: center;
 }
 
 .logo h1 {
@@ -188,10 +188,10 @@ a:active {
 }
 
 .logo-image {
-    width: 40px; /* Adjust width of logo image */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: -40px; /* Add space between the logo image and text */
-    margin-left: 24px; /* Add space between the logo image and text */
+    width: 40px;
+    height: auto;
+    margin-right: -40px;
+    margin-left: 24px;
 }
 
 /* Search Bar Styles */
@@ -281,17 +281,17 @@ a:active {
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 100vh; /* Ensure the background image covers the full viewport height */
+    height: 100vh;
 }
 
 /* Ensure content appears above overlay */
 .coffee101-content {
     position: relative;
     z-index: 1;
-    max-width: 1200px; /* Adjust based on preference */
-    margin: 0 auto; /* Centers the container horizontally */
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    text-align: left; /* Keeps text alignment normal */
+    text-align: left;
 }
 
 /* Styling for images with text wrapping */
@@ -301,19 +301,19 @@ a:active {
 
 .image-right {
     float: right;
-    margin-left: 20px; /* Adds space between the image and text */
+    margin-left: 20px;
 }
 
 .image-left {
     float: left;
-    margin-right: 20px; /* Adds space between the image and text */
+    margin-right: 20px;
 }
 
 /* Ensure images are responsive and do not overflow */
 .coffee-image {
     max-width: 25em;
     height: auto;
-    border-radius: 8px; /* Optional: gives the image rounded corners */
+    border-radius: 8px;
 }
 
 /* Clearfix for the sections to prevent layout issues */
@@ -333,14 +333,14 @@ a:active {
 }
 
 .w3-button i {
-    color: white !important; /* Ensures the icon is white */
-    font-size: 20px; /* Adjust size if needed */
+    color: white !important;
+    font-size: 20px;
     padding: 12px 12px;
 }
 
 /* Ensure sidebar menu appears correctly */
 .w3-sidebar {
-    width: 250px; /* Set sidebar width */
+    width: 250px;
     position: fixed;
     left: 0;
     top: 0;
@@ -361,7 +361,7 @@ a:active {
 .search-icon {
     font-size: 24px;
     color: white;
-    margin-right: 24px; /* Adds space between the search icon and cart */
+    margin-right: 24px;
     cursor: pointer;
 }
 
@@ -453,51 +453,51 @@ a:active {
 .carousel-container {
     position: relative;
     width: 100%;
-    max-width: 100%; /* Ensures full width on all screen sizes */
-    overflow: hidden; /* Hide any overflow content when sliding */
+    max-width: 100%;
+    overflow: hidden;
 }
 
 /* Carousel wrapper */
 .carousel {
     display: flex;
-    transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+    transition: transform 0.5s ease-in-out;
 }
 
 /* Carousel slide */
 .carousel-slide {
-    min-width: 100%; /* Ensures each item takes full width of container */
+    min-width: 100%;
     max-width: 50vw;
-    box-sizing: border-box; /* Prevents padding from affecting width */
+    box-sizing: border-box;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers content horizontally */
+    align-items: center;
 }
 
 /* Carousel images */
 .carousel-slide img {
-    width: 30%; /* Ensures the image takes full width of the container */
-    max-width: 50vw; /* Limit the image to 50% of viewport width */
-    height: auto; /* Maintains the original aspect ratio */
-    object-fit: contain; /* Ensures image is contained and maintains aspect ratio */
-    margin: 0 auto; /* Centers the image within the slide */
+    width: 30%;
+    max-width: 50vw;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
 }
 
 /* Carousel slide captions */
 .carousel-slide p {
     padding: 10px;
     font-size: 18px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     width: 100%;
-    max-width: 50vw; /* Same max width as image */
-    margin: 0 auto; /* Centers the caption below the image */
+    max-width: 50vw;
+    margin: 0 auto;
     text-align: center;
 }
 
 /* Carousel buttons */
 button {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: white;
     padding: 10px;
@@ -507,9 +507,9 @@ button {
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
-    border-radius: 50%; /* This ensures the button is circular */
-    width: 50px; /* Set width */
-    height: 50px; /* Set height the same as width */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -528,7 +528,7 @@ button {
 
 /* Hover effect for the buttons */
 .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Darken background on hover */
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .no-bullets {
@@ -576,13 +576,13 @@ th.sortable.desc::after {
   }
   
   table {
-    min-width: 600px; /* Optional: ensures table is wide enough to scroll */
+    min-width: 600px;
     border-collapse: collapse;
   }
   
   th, td {
     border: 1px solid rgba(255, 255, 255, 0.2);
-    white-space: nowrap; /* Keeps content from wrapping weirdly */
+    white-space: nowrap;
     padding: 10px;
 }
 
@@ -623,7 +623,7 @@ tr {
 
 /* Accordion content (video container) */
 .accordion-content {
-    max-height: 0; /* Initially closed */
+    max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
     margin-bottom: 60px;
@@ -633,7 +633,7 @@ tr {
 
 /* Show accordion content */
 .accordion-content.show {
-    height: 315px; /* Adjust to the content height */
+    height: 315px;
 }
 
 
@@ -646,15 +646,15 @@ tr {
   }
 
   .w3-col {
-    padding-bottom: 40px; /* reduce space below each image */
+    padding-bottom: 40px;
   }
 
   .w3-row-padding {
-    margin: 18px 0px !important; /* tighten vertical spacing between rows */
+    margin: 18px 0px !important;
   }
 
   #coffee {
-    max-width: 960px; /* optional: constrain layout width */
+    max-width: 960px;
     margin: auto;
   }
 
@@ -679,7 +679,7 @@ tr {
     padding: 16px;
     max-width: 90%;
     margin: auto;
-    flex-wrap: wrap; /* makes it responsive */
+    flex-wrap: wrap;
   }
 
   .modal-img {

@@ -177,13 +177,13 @@
                 : cellA.localeCompare(cellB);
         });
 
-        // Remove all rows (including divider)
+        // Remove all rows
         allRows.forEach(row => tbody.removeChild(row));
 
         // Add back sorted data rows
         sortedRows.forEach(row => tbody.appendChild(row));
 
-        // Re-add divider row (optional)
+        // Re-add divider row
         const divider = document.createElement("tr");
         divider.innerHTML = `<td colspan="4" style="height: 1px; background-color: #d3bfa3;"></td>`;
         tbody.appendChild(divider);
